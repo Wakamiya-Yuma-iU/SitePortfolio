@@ -19,7 +19,6 @@
   
   <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/your-logo.svg';
   </script>
   
   <!-- ヘッダー部分 -->
@@ -29,7 +28,6 @@
 	  <!-- プロフィール写真、名前、一言自己紹介 -->
 	  <div class="flex items-center">
 		<a href="/" class="flex items-center">
-		  <img src={logo} alt="Your Name" class="w-8 h-8 mr-2" />
 		  <div>
 			<span class="text-lg font-semibold">ちょっとエンジニア 開発サイト</span><br/>
 			<span class="text-sm">〜色々やりすぎて錯綜中〜</span>
