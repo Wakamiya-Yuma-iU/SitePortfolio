@@ -9,3 +9,5 @@ export const load: PageServerLoad = async ({ params }) => {
       return { status: 500, body: "Internal Server Error" };
     }
   };  
+  
+  export const prerender = false;
