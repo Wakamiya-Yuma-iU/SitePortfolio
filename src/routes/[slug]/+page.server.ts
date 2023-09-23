@@ -7,4 +7,3 @@ export const load: PageServerLoad = async ({ params }) => {
   );
 };
 
-export const prerender = true;
