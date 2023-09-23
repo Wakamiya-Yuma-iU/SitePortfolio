@@ -16,8 +16,7 @@ const config = {
     },
   }),
   kit: {
-    adapter: adapter(), // Add this line
-    // ... Add any other configurations you might have
+    adapter: adapter(), 
   }
 };
 
