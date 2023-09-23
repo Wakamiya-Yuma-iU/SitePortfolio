@@ -41,6 +41,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@svelteuidev/composables": "^0.15.3",
+		"@svelteuidev/core": "^0.15.3",
 		"microcms-js-sdk": "^2.6.1"
 	}
 }

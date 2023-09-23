@@ -5,4 +5,4 @@ export const load: PageServerLoad = async () => {
   return await getList();
 };
 
-export const prerender = "auto";
+export const prerender = true;

@@ -5,14 +5,24 @@
 </script>
 
 <div class="app">
-	<Header />
-
+	<Header/>
+	<div class="pt-12"/>
 	<main>
 		<slot />
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<footer class="footer">
+		<div class="container mx-auto py-6 px-4">
+			<div class="flex justify-between items-center">
+				<div>
+					<p>© 2023 ちょっとエンジニア 開発サイト. All rights reserved.</p>
+				</div>
+				<div class="flex space-x-4">
+					<a href="/terms" class="text-sm">利用規約</a>
+					<a href="/privacy" class="text-sm">プライバシーポリシー</a>
+				</div>
+			</div>
+		</div>
 	</footer>
 </div>
 
@@ -34,20 +44,13 @@
 		box-sizing: border-box;
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
+	.footer {
+		background-color: var(--color-bg-2);
+		color: var(--color-theme-1);
 	}
 
 	@media (min-width: 480px) {
-		footer {
+		.footer {
 			padding: 12px 0;
 		}
 	}
