@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
+// import adapter from '@sveltejs/adapter-auto'; // Remove this line
+import adapter from '@sveltejs/adapter-cloudflare'; // Add this line
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import sveltePreprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
@@ -14,6 +15,10 @@ const config = {
       ],
     },
   }),
+  kit: {
+    adapter: adapter(), // Add this line
+    // ... Add any other configurations you might have
+  }
 };
 
 export default config;
