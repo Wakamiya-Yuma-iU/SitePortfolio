@@ -22,7 +22,6 @@
 	  top: 0;
 	  left: 0;
 	  width: 100%;
-	  z-index: 1000;
 	}
 </style>
 
@@ -77,7 +76,7 @@
 		  <ul>
 			<!-- ナビゲーションの項目 -->
 			{#each ['/','/about','/skills','/projects','/blog','/resume','/contact'] as path, index}
-			  <li class={$page.url.pathname === path ? 'border-white nav-link' : 'nav-link'}>
+			  <li class={$page.url.pathname === path ? 'border-white nav-link' : 'nav-link z-100'}>
 				<a href={path} class="block px-4 py-2">{['ホーム', '自己紹介', 'スキルセット', 'プロジェクト', 'ブログ', '経歴', 'お問い合わせ'][index]}</a>
 			  </li>
 			{/each}
